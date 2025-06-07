@@ -60,8 +60,19 @@ The raw dataset required several cleaning and preprocessing steps to ensure accu
 |   2015 |       7 | Minnesota    | 2015-07-18 02:00:00 | 2015-07-19 07:00:00  | severe weather     | nan                     |               nan |              1740 |               250000 |     2028875 |     2161612 |     1777937 |       5970339 |      33.9826 |      36.2059 |      29.7795 |        11569825 |
 
 ### EDA
+This plot shows the distribution of all recorded power outages in the dataset, with durations converted from minutes to hours. Most outages cluster toward the lower end of the spectrum, though a few long-lasting events stretch the upper range.
+
 <iframe
   src="assets/Distribution_of_Outage_Duration.html"
+  width="1000"
+  height="600"
+  frameborder="0"
+></iframe>
+
+To get a clearer view of the more common outage durations, this version filters out extreme values above 250 hours. The resulting histogram reveals a right-skewed distribution, with the majority of outages lasting under 50 hours.
+
+<iframe
+  src="assets/Distribution_of_Short_Outages.html"
   width="1000"
   height="600"
   frameborder="0"
