@@ -115,11 +115,17 @@ This figure displays the counts of different outage causes (CAUSE.CATEGORY) sepa
 
 ## Hypothesis Testing
 To assess whether there is a statistically significant relationship between the number of power outages and total electricity usage, we conducted a permutation test using Pearson correlation as the test statistic.
-Our null hypothesis (H₀) states that there is no association between the number of outages and electricity usage, any observed correlation is due to random chance. The alternative hypothesis (H₁) is that there is an association between these variables.
+The null hypothesis (H₀) states that there is no association between the number of outages and electricity usage, any observed correlation is due to random chance. 
+The alternative hypothesis (H₁) is that there is an association between these variables.
 
 The observed Pearson correlation between the number of outages and electricity usage was 0.7266, indicating a strong positive correlation: as electricity usage increases, the number of power outages also tends to increase. To evaluate its significance, we randomly permuted the electricity usage values 10,000 times and recalculated the correlation each time. The resulting p-value was 0.0000, meaning that in none of the permutations did a correlation as extreme as the observed one occur by chance.
 
-Using a standard significance level of α = 0.05, we find strong evidence against the null hypothesis. This suggests that the observed correlation is unlikely to be due to random variation alone, and we have statistical support for a meaningful association between the number of power outages and electricity usage. The permutation approach is appropriate here because it does not assume normality and directly tests the null hypothesis using the empirical data.
+Using a standard significance level of α = 0.05, we find strong evidence against the null hypothesis. This suggests that the observed correlation is unlikely to be due to random variation alone, and we have statistical support for a meaningful association between the number of power outages and electricity usage. 
+
+The permutation approach is appropriate here because it does not assume normality and directly tests the null hypothesis using the empirical data. It also doesn’t assume a known population distribution and works well when the full population data isn’t available. Instead, it estimates significance by shuffling the observed data to create a null distribution.
+I chose pearson correlation as my test statistic because it measures the strength and direction of the linear relationship between two continuous variables, which fits the question about outages and usage.
+I chose alpha level of 0.05 since that's the common standard that balances detecting true effects while limiting false positives.
+
 
 <iframe
   src="assets/permutation_test_histogram.html"
