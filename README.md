@@ -78,6 +78,25 @@ To get a clearer view of the more common outage durations, this version filters 
   frameborder="0"
 ></iframe>
 
+This interactive choropleth map shows the number of power outages by U.S. state, with darker colors representing more outages. It helps visualize geographic patterns and identify states most affected by power disruptions.
+<iframe
+  src="assets/outage_map.html"
+  width="1000"
+  height="600"
+  frameborder="0"
+></iframe>
+
+This pivot table summarizes power outage data by state and year. For each state-year pair, it shows the total number of outages (NUM_OUTAGES) recorded and the total electricity usage (TOTAL_USAGE) for that year, enabling analysis of how outage frequency relates to annual electricity consumption across different states and years.
+
+| U.S._STATE   |   YEAR |   NUM_OUTAGES |   TOTAL_USAGE |
+|:-------------|-------:|--------------:|--------------:|
+| Alabama      |   2000 |             2 |      15295312 |
+| Alabama      |   2013 |             1 |       6479167 |
+| Alabama      |   2014 |             1 |       7907462 |
+| Alabama      |   2015 |             1 |       8934377 |
+| Alaska       |   2000 |             0 |             0 |
+
+
 ## Assessment of Missingness
 
 ## Hypothesis Testing
