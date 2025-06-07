@@ -59,10 +59,10 @@ The raw dataset required several cleaning and preprocessing steps to ensure accu
 |   2012 |       6 | Minnesota    | 2012-06-19 04:30:00 | 2012-06-20 23:00:00  | severe weather     | thunderstorm            |               nan |              2550 |                68200 |     1851519 |     1941174 |     1993026 |       5787064 |      31.9941 |      33.5433 |      34.4393 |         5787064 |
 |   2015 |       7 | Minnesota    | 2015-07-18 02:00:00 | 2015-07-19 07:00:00  | severe weather     | nan                     |               nan |              1740 |               250000 |     2028875 |     2161612 |     1777937 |       5970339 |      33.9826 |      36.2059 |      29.7795 |        11569825 |
 
-###EDA
+### EDA
 <iframe
   src="assets/Distribution_of_Outage_Duration.html"
-  width="600"
+  width="1000"
   height="600"
   frameborder="0"
 ></iframe>
