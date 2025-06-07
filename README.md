@@ -121,6 +121,13 @@ The observed Pearson correlation between the number of outages and electricity u
 
 Using a standard significance level of α = 0.05, we find strong evidence against the null hypothesis. This suggests that the observed correlation is unlikely to be due to random variation alone, and we have statistical support for a meaningful association between the number of power outages and electricity usage. The permutation approach is appropriate here because it does not assume normality and directly tests the null hypothesis using the empirical data.
 
+<iframe
+  src="assets/permutation_test_histogram.html"
+  width="1000"
+  height="600"
+  frameborder="0"
+></iframe>
+
 ## Framing a Prediction Problem
 In this project, I aim to predict the number of power outages in each U.S. state per year based on its electricity usage. This is a regression problem, as the response variable, NUM_OUTAGES, is a continuous numerical value rather than a discrete category.
 
