@@ -62,7 +62,7 @@ The raw dataset required several cleaning and preprocessing steps to ensure accu
 ###EDA
 <iframe
   src="assets/Distribution_of_Outage_Duration.html"
-  width="800"
+  width="600"
   height="600"
   frameborder="0"
 ></iframe>
